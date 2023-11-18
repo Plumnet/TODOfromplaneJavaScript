@@ -4,33 +4,33 @@
     <title>TODO(JS)</title>
     <meta charset="UTF-8" />
   </head>
-
   <body>
     <div class="input-area">
       <input placeholder="TODOを入力" />
-      <button>追加</button>
+      <button id="add-button">追加</button>
     </div>
-    <div class="imcomplete-area">
-      <p>未完了のTODO</p>
+    <div class="incomplete-area">
+      <p class="titile">未完了のTODO</p>
       <ul>
-        <li>
-          <div>
-            <p>TODOです</p>
-            <button>完了</button>
-            <button>削除</button>
-          </div>
-        </li>
+        <div class="list-row">
+          <li>TODOです</li>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+        <div class="list-row">
+          <li>TODOです</li>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
       </ul>
     </div>
     <div class="complete-area">
-      <p>完了したTODO</p>
+      <p class="titile">完了したTODO</p>
       <ul>
-        <li>
-          <div>
-            <p>TODOでした</p>
-            <button>戻す</button>
-          </div>
-        </li>
+        <div class="list-row">
+          <li>TODOでした</li>
+          <button>戻す</button>
+        </div>
       </ul>
     </div>
     <script src="./index.mjs" type="module"></script>
