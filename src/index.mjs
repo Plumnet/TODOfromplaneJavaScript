@@ -31,7 +31,7 @@ const onClickAdd = () => {
   deleteButton.addEventListener("click", () => {
     // 押された削除ボタンの親にあるliタグを未完了リストから削除
     const deleteTarget = deleteButton.closest("li");
-    console.log(deleteTarget);
+  document.getElementById("incomplete-list").removeChild(deleteTarget);    
   })
 
   // liタグの子要素に各要素を設定
