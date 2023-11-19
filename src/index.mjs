@@ -18,7 +18,12 @@ const onClickAdd = () => {
   p.className = "todo-item";
   p.innerText = inputText;
 
-  console.log(p);
+  // liタグの子要素に各要素を設定
+  div.appendChild(p);
+  li.appendChild(div);
+
+  // 未完了リストに追加
+  document.getElementById("incomplete-list").appendChild(li);
 }
 
 document.getElementById("add-button").addEventListener("click", onClickAdd);
