@@ -25,6 +25,11 @@ const onClickAdd = () => {
     // 押され完了ボタンの親にあるliタグ配下の完了ボタンと削除ボタンを削除
     const moveTarget = compleateButton.closest("li");
     compleateButton.nextElementSibling.remove();
+    compleateButton.remove();
+    // 戻すボタンを生成してdivタグ配下に設定
+    const backButton = document.createElement("button");
+    backButton.innerText = "戻す";
+    moveTarget.firstElementChild.appendChild(backButton);   
   });
 
   // button(削除)タグ生成
