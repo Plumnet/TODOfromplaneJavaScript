@@ -29,7 +29,9 @@ const onClickAdd = () => {
     // 戻すボタンを生成してdivタグ配下に設定
     const backButton = document.createElement("button");
     backButton.innerText = "戻す";
-    moveTarget.firstElementChild.appendChild(backButton);   
+    moveTarget.firstElementChild.appendChild(backButton);
+    // 完了リストに移動
+    document.getElementById("complete-list").appendChild(moveTarget);    
   });
 
   // button(削除)タグ生成
