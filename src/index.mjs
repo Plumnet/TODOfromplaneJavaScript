@@ -22,7 +22,9 @@ const onClickAdd = () => {
   const compleateButton = document.createElement("button");
   compleateButton.innerText = "完了";
   compleateButton.addEventListener("click", () => {
-    alert("完了");
+    // 押され完了ボタンの親にあるliタグ配下の完了ボタンと削除ボタンを削除
+    const moveTarget = compleateButton.closest("li");
+    compleateButton.nextElementSibling.remove();
   });
 
   // button(削除)タグ生成
