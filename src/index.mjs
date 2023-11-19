@@ -9,12 +9,16 @@ const onClickAdd = () => {
 // li作成
   const li = document.createElement("li");
   
-
   // div生成
   const div = document.createElement("div");
   div.className = "list-row";
 
-  console.log(div);
+  // p生成
+  const p = document.createElement("p");
+  p.className = "todo-item";
+  p.innerText = inputText;
+
+  console.log(p);
 }
 
 document.getElementById("add-button").addEventListener("click", onClickAdd);
